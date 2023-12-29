@@ -26,11 +26,11 @@ export const LinksWrapper = styled.nav`
 `
 
 type LinkItemProps = React.LinkHTMLAttributes<'a'> & {
-    pathName?: string
+    pathname?: string
 }
 
-export const LinkItem = styled(Link)<LinkItemProps>(({ theme, href, pathName }) => ({
-    color: href === pathName ? theme.colors.aliases.primaryText : theme.colors.aliases.defaultText,
+export const LinkItem = styled(Link)<LinkItemProps>(({ theme, href, pathname }) => ({
+    color: href === pathname ? theme.colors.aliases.primaryText : theme.colors.aliases.defaultText,
     fontWeight: 700,
     '&:hover': {
         color: theme.colors.aliases.primaryText,

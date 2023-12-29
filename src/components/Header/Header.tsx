@@ -13,9 +13,9 @@ export const Header = () => {
     <S.Wrapper>
       <S.Logo href="/">Lacrei</S.Logo>
       <S.LinksWrapper>
-        <S.LinkItem href="/" pathName={pathname}>Home</S.LinkItem>
-        <S.LinkItem href="/pessoa-usuaria" pathName={pathname}>Pessoa Usuária</S.LinkItem>
-        <S.LinkItem href="/profissional" pathName={pathname}>Profissional</S.LinkItem>
+        <S.LinkItem href="/" pathname={pathname}>Home</S.LinkItem>
+        <S.LinkItem href="/pessoa-usuaria" pathname={pathname}>Pessoa Usuária</S.LinkItem>
+        <S.LinkItem href="/profissional" pathname={pathname}>Profissional</S.LinkItem>
       </S.LinksWrapper>
     </S.Wrapper >
   )
