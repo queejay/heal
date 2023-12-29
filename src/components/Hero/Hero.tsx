@@ -7,9 +7,7 @@ import * as S from './Hero.styles'
  */
 type HeroTextsProps = React.HTMLAttributes<HTMLDivElement>
 export const HeroTexts: React.FC<HeroTextsProps> = (props) => {
-    return (
-        <S.HeroTexts {...props} />
-    )
+  return <S.HeroTexts {...props} />
 }
 
 /**
@@ -17,9 +15,7 @@ export const HeroTexts: React.FC<HeroTextsProps> = (props) => {
  */
 type HeroActionsProps = React.HTMLAttributes<HTMLDivElement>
 export const HeroActions: React.FC<HeroActionsProps> = (props) => {
-    return (
-        <S.HeroActions {...props} />
-    )
+  return <S.HeroActions {...props} />
 }
 
 /**
@@ -27,28 +23,23 @@ export const HeroActions: React.FC<HeroActionsProps> = (props) => {
  */
 type HeroImageWrapperProps = React.HTMLAttributes<HTMLDivElement>
 export const HeroImageWrapper: React.FC<HeroImageWrapperProps> = (props) => {
-    return (
-        <S.HeroImageWrapper {...props} />
-    )
+  return <S.HeroImageWrapper {...props} />
 }
-
 
 type HeroProps = React.HTMLAttributes<HTMLDivElement>
 /**
  * Representação do componente Hero (utilizando o padrão Compound)
  */
 interface HeroFC extends React.FC<HeroProps> {
-    TextsWrapper: React.FC<HeroTextsProps>
-    ActionsWrapper: React.FC<HeroActionsProps>
-    ImageWrapper: React.FC<HeroImageWrapperProps>
+  TextsWrapper: React.FC<HeroTextsProps>
+  ActionsWrapper: React.FC<HeroActionsProps>
+  ImageWrapper: React.FC<HeroImageWrapperProps>
 }
 /**
  * Componente Hero
  */
 export const Hero: HeroFC = (props) => {
-    return (
-        <S.Wrapper {...props} />
-    )
+  return <S.Wrapper {...props} />
 }
 
 Hero.TextsWrapper = HeroTexts
