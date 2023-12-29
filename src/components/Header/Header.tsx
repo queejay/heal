@@ -4,7 +4,6 @@ import React from 'react'
 
 import * as S from './Header.styles'
 import { usePathname } from 'next/navigation';
-import Link from 'next/link';
 
 export const Header = () => {
   const pathname = usePathname()

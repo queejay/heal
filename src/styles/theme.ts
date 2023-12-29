@@ -6,6 +6,7 @@ const neutralGray = {
     200: "#EEE",
     300: "#EBEBEB",
     400: "#E0E0E0",
+    600: "#B0E0D3",
     800: "#515151",
     900: "#1F1F1F"
 }
@@ -33,6 +34,8 @@ export const theme = {
             primaryText: primary[500],
             primaryBackground: primary[500],
             textOnPrimary: neutralGray[50],
+
+            divider: neutralGray[600],
         }
     }
 }

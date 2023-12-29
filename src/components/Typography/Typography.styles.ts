@@ -51,3 +51,9 @@ export const Quote = styled.blockquote`
         line-height: 140%;
     }
 `;
+
+export const Small = styled.small`
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.aliases.secondaryText};
+`;

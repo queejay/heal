@@ -17,7 +17,7 @@ export const Typography: React.FC<React.PropsWithChildren<TypographyProps>> = (p
         case 'quote':
             return <S.Quote {...rest}>{children}</S.Quote>
         case 'small':
-            return <small {...rest}>{children}</small>
+            return <S.Small {...rest}>{children}</S.Small>
         default:
             return <p {...rest}>{children}</p>
     }

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
+
 import Header from '~/components/Header'
+import Footer from '~/components/Footer'
+
 import StyledComponentsRegistry from './styled-registry'
-import { ThemeProvider } from 'styled-components'
-import { theme } from '~/styles/theme'
 import { Providers } from './providers'
 
 const nunito = Nunito({ subsets: ['latin'], weight: ['700', '400'] })
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Providers>
             <Header />
             {children}
+            <Footer />
           </Providers>
         </StyledComponentsRegistry>
       </body>
