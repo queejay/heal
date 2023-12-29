@@ -10,7 +10,7 @@ export const Wrapper = styled.header`
     width: '100%';
     background-color: ${({ theme }) => theme.colors.aliases.headerBackground};
     color: ${({ theme }) => theme.colors.aliases.defaultText};
-    padding: 0.5rem 4rem;
+    padding: 1rem 4rem;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
         padding: 0.5rem 2rem;
