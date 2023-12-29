@@ -3,8 +3,13 @@ import Image from 'next/image'
 
 import * as S from './page.styles'
 import Hero from '~/components/Hero'
+import { Metadata } from 'next'
 
-export default function Home() {
+export const metadata: Metadata = {
+    title: "Profissional"
+}
+
+export default function Profissional() {
     return (
         <S.Wrapper>
             <Hero>
