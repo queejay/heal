@@ -36,13 +36,18 @@ export const Subtitle = styled.h2`
 export const Quote = styled.blockquote`
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 137.5%;
+    line-height: 134%;
     color: ${({ theme }) => theme.colors.aliases.secondaryText};
-    border-left: 2px solid ${({ theme }) => theme.colors.aliases.primaryText};
+    border-left: 5px solid ${({ theme }) => theme.colors.aliases.primaryText};
     padding-left: 1rem;
     
     @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
         font-size: 1rem;
         line-height: 150%;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+        font-size: 0.875rem;
+        line-height: 140%;
     }
 `;

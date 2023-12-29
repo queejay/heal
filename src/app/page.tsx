@@ -23,7 +23,7 @@ export default function Home() {
         </S.HeroActions>
       </S.HeroContent>
       <S.HeroImage>
-        <Image src="/hero-image.svg" width={560} height={425} alt='Ilustração de uma médica analisando informações de um paciente' />
+        <Image src="/hero-homepage.svg" width={560} height={425} alt='Ilustração de uma médica analisando informações de um paciente' />
       </S.HeroImage>
     </S.Wrapper>
   )

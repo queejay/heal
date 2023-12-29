@@ -47,19 +47,6 @@ export const HeroTexts = styled.div`
     }
 `
 
-export const HeroActions = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
-        width: 100%;
-        align-items: center;
-        gap: 1rem;
-        flex-direction: column;
-    }
-`
-
 export const HeroImage = styled.div`
     & > img {
         width: 100%
