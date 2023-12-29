@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
     padding: 0 4rem;
+    padding-top: 4rem;
 `
 
 export const HeroContent = styled.div`
@@ -23,12 +24,14 @@ export const HeroTexts = styled.div`
 
 export const Title = styled.h1`
     font-size: 3rem;
+    line-height: 135%;
     color: ${({ theme }) => theme.colors.aliases.defaultText};
 `
 
 export const Subtitle = styled.h2`
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 137.5%;
     color: ${({ theme }) => theme.colors.aliases.secondaryText};
 `
 
