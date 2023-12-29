@@ -20,9 +20,14 @@ export const theme = {
         primary,
         aliases: {
             defaultBackground: neutralGray[50],
-            defaultText: neutralGray[900],
             headerBackground: neutralGray[200],
+
+            defaultText: neutralGray[900],
+            secondaryText: neutralGray[800],
+
             primaryText: primary[500],
+            primaryBackground: primary[500],
+            textOnPrimary: neutralGray[50],
         }
     }
 }
