@@ -61,6 +61,9 @@ export const HeroActions = styled.div`
     }
 `
 
-export const HeroImage = styled(Image)`
-    object-fit: cover;
+export const HeroImage = styled.div`
+    width: 100%;
+    & > img {
+        width: 100%
+    }
 `
