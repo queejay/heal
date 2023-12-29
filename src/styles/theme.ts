@@ -15,6 +15,11 @@ const primary = {
 }
 
 export const theme = {
+    breakpoints: {
+        sm: 320,
+        md: 520,
+        lg: 1024,
+    },
     colors: {
         neutralGray,
         primary,

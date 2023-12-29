@@ -11,6 +11,16 @@ export const Wrapper = styled.header`
     background-color: ${({ theme }) => theme.colors.aliases.headerBackground};
     color: ${({ theme }) => theme.colors.aliases.defaultText};
     padding: 0.5rem 4rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+        padding: 0.5rem 2rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
 `
 
 export const Logo = styled(Link)`
@@ -23,6 +33,14 @@ export const LinksWrapper = styled.nav`
     display: flex;
     align-items: center;
     gap: 2.5rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.lg}px) {
+        gap: 2rem;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}px) {
+        gap: 1rem;
+    }
 `
 
 type LinkItemProps = React.LinkHTMLAttributes<'a'> & {
